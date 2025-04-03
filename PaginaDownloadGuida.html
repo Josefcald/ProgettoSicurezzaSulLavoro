@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!-- Dichiarazione del tipo di documento -->
+<html lang="it"> <!-- Settaggio della lingua principale della pagina web -->
+<head>
+  <meta charset="UTF-8">
+  <!--Settaggio dei metadati ai fini dell'indicizzazione-->
+  <meta name="author" content="Giuseppe Nocera">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Questa linea di codice rende la pagina responsiva-->
+  <meta name="description" content="Scarica la guida intuitiva e completa al calcolo del fattore di rischio per la sicurezza sul lavoro. 
+  La seguente guida è redatta ai sensi del D.Lgs. 9/08">
+  <title>Guida completa al Calcolo del Fattore di Rischio Ed. 2025</title>
+  <style> 
+    body { 
+      font-family: Arial, sans-serif; /*settaggio del font principale e secondario dei caratteri contenuti*/
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-image: url('sfondo.jpg'); /* impostazione dello sfondo che avrà la pagina */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    header {
+      background-color: rgba(255, 0, 85, 0.8);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      border-bottom: 4px solid #ffffff;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.9);
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    main p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #000000;
+      text-align: center;
+    }
+    .download-button {   /*implementazione dello stile del pulsante di download */
+      background-color: #28a745;
+      color: white;
+      font-size: 1.2em;
+      padding: 16px 40px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.2s;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .download-button:hover { /* Settaggio di un effetto stilistico di ingrandimento quando il puntatore entra sul bottone */
+      background-color: #218838;
+      transform: translateY(-2px);
+    }
+    .download-button:focus {
+      outline: none;
+    }
+    .download-button:active {
+      background-color: #1e7e34;
+      transform: translateY(0);
+    }
+    #confirmation-message {
+      display: none;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #28a745;
+      color: white;
+      border-radius: 5px;
+    }
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+      header {
+        padding: 20px 0;
+      }
+      header h1 {
+        font-size: 2em;
+      }
+      main {
+        padding: 20px;
+      }
+      .download-button {
+        font-size: 1em;
+        padding: 12px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header> <!-- Parte di codice che verte su cosa comparirà in testa alla pagina -->
+    <h1>Guida completa al Calcolo del Fattore di Rischio aggiornato all'anno 2025</h1>
+    <p>Scarica la guida intuitiva e completa al calcolo del fattore di rischio per la sicurezza sul lavoro. 
+        La seguente guida è redatta ai sensi del D.Lgs. 9/08"</p>
+  </header>
+  <main> <!-- Descrizione del contenuto della guida utilizzando un elenco non numerato -->
+    <p>In questo documento PDF troverai tutte le informazioni necessarie per calcolare correttamente il fattore di rischio in base alle normative sulla sicurezza sul lavoro D.Lgs 9/08 Testo unico sulla sicurezza nei luoghi di lavoro in Italia<br> In dettaglio troverai:<br>
+        <ul>
+            <li>Introduzione al calcolo del fattore di rischio;</li>
+        <li>Metodo matematico per il calcolo del fattore di rischio;</li>
+    <li>Modello matriciale per il calcolo del fattore di rischio.</li>
+    </ul>
+    <br> Clicca sul pulsante qui sotto per scaricarlo.</p>
+    <!-- riferimento al file pdf contenuto nella directory per poter essere scaricato -->
+    <a href = "documento_fattore_di_rischio.pdf" class = "download-button" download id = "downloadButton"> Scarica il Documento </a>    
+    <div id="confirmation-message">Il documento è stato scaricato correttamente!</div>  <!--messaggio di conferma dopo aver scaricato il documento-->
+  </main>
+
+  
+</body>
+</html>
